@@ -15,4 +15,9 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="signup">Sign up</string>
+    <string name="signup_with_google">Sign up with Google</string>
+    <string name="name">Nama</string>
+    <string name="signup_page_text">Masukkan data yang diperlukan</string>
+    <string name="name_hint">nama</string>
 </resources>
