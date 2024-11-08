@@ -36,7 +36,8 @@
         android:layout_marginEnd="16dp"
         android:text="@string/login"
         android:textSize="16sp"
-        android:layout_marginTop="128dp"/>
+        android:layout_marginTop="128dp"
+        android:backgroundTint="@color/brown_dark"/>
 
     <Button
         android:id="@+id/btn_signup"
@@ -46,6 +47,7 @@
         android:layout_marginEnd="16dp"
         android:text="@string/sign_up"
         android:textSize="16sp"
-        android:layout_marginTop="16dp"/>
-
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/brown_light"
+        android:textColor="@color/black"/>
 </LinearLayout>

@@ -5,4 +5,14 @@
     <string name="login_with_google">Login with Google</string>
     <string name="sign_up">Sign up</string>
     <string name="welcome_app_text">Peduli pasal adalah aplikasi ChatBot pintar yang dapat mengetahui pasal yang sesuai dengan kejahatan atau tindak pidana yang kamu berikan</string>
+    <string name="login_page_text">Masukkan email dan password atau login menggunakan Google</string>
+    <string name="email_warning">Format email invalid</string>
+    <string name="email">Email</string>
+    <string name="email_hint">email@gmail.com</string>
+    <string name="password">Password</string>
+    <string name="password_hint">password</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>
