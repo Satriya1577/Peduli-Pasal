@@ -20,4 +20,8 @@
     <string name="name">Nama</string>
     <string name="signup_page_text">Masukkan data yang diperlukan</string>
     <string name="name_hint">nama</string>
+    <string name="profile">Profil</string>
+    <string name="logout">Logout</string>
+    <string name="user_email">c14220311@john.petra.ac.id</string>
+    <string name="user_name">Satriya Wibowo</string>
 </resources>
