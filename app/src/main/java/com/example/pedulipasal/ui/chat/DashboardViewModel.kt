@@ -1,4 +1,4 @@
-package com.example.pedulipasal.ui.dashboard
+package com.example.pedulipasal.ui.chat
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
