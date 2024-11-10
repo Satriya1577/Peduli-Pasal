@@ -1,10 +1,8 @@
 package com.example.pedulipasal.ui.news
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.pedulipasal.data.Repository
+import com.example.pedulipasal.data.NewsRepository
 
-class NewsViewModel(private val repository: Repository) : ViewModel() {
-    fun getNews() = repository.getNews()
+class NewsViewModel(private val newsRepository: NewsRepository) : ViewModel() {
+    fun getNews() = newsRepository.getNews()
 }

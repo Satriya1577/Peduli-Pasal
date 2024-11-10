@@ -2,14 +2,12 @@ package com.example.pedulipasal.data
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.liveData
-import com.example.pedulipasal.R
 import com.example.pedulipasal.data.api.NewsApiService
 import com.example.pedulipasal.data.model.NewsItem
 import com.example.pedulipasal.helper.Result
-import com.google.gson.Gson
 import retrofit2.HttpException
 
-class Repository(
+class NewsRepository(
     private val newsApiService: NewsApiService
 ) {
     fun getNews(): LiveData<Result<List<NewsItem>>> = liveData {
@@ -30,17 +28,25 @@ class Repository(
         }
     }
 
-
-
+    suspend fun getDailyNews(): NewsItem {
+        val listNews = ArrayList<NewsItem>()
+        val response = newsApiService.getDailyNews().articles
+        response?.forEach {
+            if (it != null) {
+                listNews.add(it)
+            }
+        }
+        return listNews[0]
+    }
 
     companion object {
         @Volatile
-        private var instance: Repository? = null
+        private var instance: NewsRepository? = null
         fun getInstance(
             newsApiService: NewsApiService
-        ): Repository =
+        ): NewsRepository =
             instance ?: synchronized(this) {
-                instance ?: Repository(
+                instance ?: NewsRepository(
                    newsApiService
                 )
             }.also { instance = it }

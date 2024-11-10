@@ -1,11 +1,13 @@
 package com.example.pedulipasal.di
 
 import android.content.Context
-import com.example.pedulipasal.data.Repository
+import com.example.pedulipasal.data.NewsRepository
 import com.example.pedulipasal.data.api.ApiConfig
+import com.example.pedulipasal.ui.settings.SettingsPreferences
+import com.example.pedulipasal.ui.settings.dataStore
 
 object Injection {
-    fun provideRepository(context: Context): Repository {
+    fun provideNewsRepository (context: Context): NewsRepository {
 
         // val pref = UserPreference.getInstance(context.dataStore)
 //        val apiService = ApiConfig.getApiService {
@@ -13,6 +15,10 @@ object Injection {
 //        }
 
         val newsApiService = ApiConfig.getNewsApiService()
-        return Repository.getInstance(newsApiService)
+        return NewsRepository.getInstance(newsApiService)
+    }
+
+    fun provideSettingsPreferences(context: Context): SettingsPreferences {
+        return SettingsPreferences.getInstance(context.dataStore)
     }
 }
