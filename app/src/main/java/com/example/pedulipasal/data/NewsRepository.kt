@@ -29,10 +29,7 @@ class Repository(
             emit(Result.Error(e.toString()))
         }
     }
-
-
-
-
+t
     companion object {
         @Volatile
         private var instance: Repository? = null
